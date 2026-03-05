@@ -12,7 +12,7 @@ const app = express()
 dotenv.config()
 app.use(express.json())
 app.use(cors({
-    origin:["https://abdul-shop-frontend.vercel.app","http://localhost:5173"],
+    origin:["https://abdul-shop-frontend.vercel.app","https://abdul-shop-admin.vercel.app/"],
     credentials:true
 }))
 
