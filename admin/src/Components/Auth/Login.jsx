@@ -8,8 +8,8 @@ import { toast, ToastContainer } from "react-toastify";
 import { api_url } from "../../config";
 
 const Login = () => {
-  const [email, setEmail] = useState("abdulkorim@abdulshop.com");
-  const [password, setPassword] = useState("korim+Abdulshop@77");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate()
   const {setToken,setAdmin} = useContext(AuthContext)
   const handelLogin = async (e) => {
