@@ -41,5 +41,6 @@ app.use((err,req,res,next)=>{
 //  listing port 
 const port = process.env.PORT || 3000
 app.listen(port,()=>{
-    console.log(`server running on http://localhost:${port}`);
+    console.log(`abdul korim shop backend server running `);
+    console.log(`this backend make by Abdul Korim`);
 })
