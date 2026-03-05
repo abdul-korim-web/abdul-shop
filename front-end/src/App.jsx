@@ -14,6 +14,7 @@ import MyCart from './Components/MyCart'
 import NotFound from './Components/404Page/NotFound'
 import Order from './Components/Order/Order'
 import SingleOrderView from './Components/Order/SingleOrderView';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
      <ServicePromise/>
      <Footer/>
      <ToastContainer/>
+     <Analytics />
      </>
   )
 }
