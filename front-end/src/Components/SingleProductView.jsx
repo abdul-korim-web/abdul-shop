@@ -5,11 +5,13 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { useNavigate, useParams } from "react-router-dom";
 import Slider from "react-slick";
 import { product_url } from "../Config/SarverURL";
+import useCart from "./function/cartProductAdd";
 
 const SingleProductView = () => {
     const [product,setProduct] = useState({})
     const [loading,setLoading] = useState(false)
     const navigate = useNavigate()
+    const {addCartProduct} = useCart()
     const settings = {
     customPaging: function (i) {
       return (
@@ -149,6 +151,7 @@ const {productId} = useParams()
         Buy Now
       </Button>
       <Button
+      onClick={()=>addCartProduct(product)}
         isDisabled={!product?.isAvailable}
         className={`
           ${product?.isAvailable ? 'cursor-pointer' : 'cursor-not-allowed'}

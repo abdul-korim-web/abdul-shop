@@ -16,6 +16,7 @@ const useCart = () => {
       
     }
     setUserCart(prev => [...prev, {...product, quantity:1}]);
+    toast.success(`${product?.productName} added`)
   };
 
   return { addCartProduct };
