@@ -29,11 +29,15 @@ const AuthProvider = ({ children }) => {
       console.log(error?.response?.data);
     }
   };
+  const logout = ()=>{
+    localStorage.removeItem("abdul_shop_token")
+    setToken(null);
+  }
   useEffect(() => {
     getUserInfo();
   }, [token]);
   return (
-    <AuthContex.Provider value={{ token, setToken, userCart, setUserCart,userInfo }}>
+    <AuthContex.Provider value={{ token, setToken, userCart, setUserCart,userInfo,logout }}>
       {children}
     </AuthContex.Provider>
   );

@@ -43,7 +43,7 @@ const HomeProductCart = ({ homeProduct }) => {
                   {product.isAvailable ? "Available" : "Out of stock"}
                 </p>
                 <h4 className="text-black font-medium text-xl">
-                  {product.productName}
+                  {product.productName } 
                 </h4>
               </CardHeader>
 
