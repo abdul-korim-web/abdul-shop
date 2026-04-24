@@ -18,15 +18,15 @@ const Footer = () => {
     },
     {
       icon: <FaFacebook />,
-      to: "https://github.com/abdul-korim-web",
+      to: "https://www.facebook.com/abdulkorimweb",
     },
     {
       icon: <FaLinkedin />,
-      to: "https://github.com/abdul-korim-web",
+      to: "https://www.linkedin.com/in/abdul-korim-webdeveloper",
     },
     {
       icon: <MdEmail />,
-      to: "https://github.com/abdul-korim-web",
+      to: "abdulkorimwebdeveloper@gmail.com",
     },
   ];
   // list shopAccout
