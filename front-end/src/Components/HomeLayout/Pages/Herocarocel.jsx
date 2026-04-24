@@ -147,6 +147,7 @@ const Herocarocel = () => {
                   borderRadius: "5px",
                   background: "black",
                   padding: "5px 30px",
+                  backgroundColor:"blue"
                 }}
               >
                 SHOP NOW

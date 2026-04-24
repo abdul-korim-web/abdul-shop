@@ -35,8 +35,8 @@ const Navbar = () => {
     <nav className="p-4 md:px-30 flex justify-between items-center border-b border-gray-400 gap-x-3 md:gap-x-7 sticky top-0 z-50 bg-transparent backdrop-blur-3xl">
 
       {/* Logo */}
-      <div className="w-[80px] md:w-[200px]">
-        <img className="h-10 md:h-15" src="image/logo.png" alt="logo" />
+      <div className="w-[80px] md:w-[200px] ">
+        <img className="h-10 md:h-15 rounded-[10000px] " src="image/logo.png" alt="logo" />
       </div>
 
       {/* Search */}
