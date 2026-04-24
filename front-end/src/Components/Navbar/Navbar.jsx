@@ -72,7 +72,7 @@ const Navbar = () => {
             <MdAccountBox className="text-2xl cursor-pointer" />
 
             <div className="relative">
-              <button onClick={() => navigate("/mycart")}>
+              <button className="cursor-pointer" onClick={() => navigate("/mycart")}>
                 <FaCartArrowDown className="text-2xl" />
                 <span className="absolute -top-2 -right-2 text-xs bg-red-500 text-white rounded-full px-1">
                   {userCart?.length}

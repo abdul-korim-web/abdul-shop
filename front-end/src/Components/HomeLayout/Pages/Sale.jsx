@@ -1,7 +1,9 @@
 import Button from '@mui/material/Button';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Sale = () => {
+    const navigate = useNavigate()
     return (
         <div className='grid grid-cols-1 p-10 gap-5 md:grid-cols-2 md:h-[550px]  '>
             {/* 1st */}
@@ -10,7 +12,7 @@ const Sale = () => {
                 <div className='absolute flex flex-col space-y-2 w-full h-full justify-center items-center text-white  bg-black/40'>
                     <h2 className='font-bold text-xl'>10% sales ongoing on phone</h2>
                     <p className='font-bold'>offers on limited time</p>
-                    <Button variant='contained' sx={{backgroundColor:"#5C5352", borderRadius:"10px"}}> shop Now</Button>
+                    <Button onClick={()=>navigate(`/shop`)} variant='contained' sx={{backgroundColor:"#5C5352", borderRadius:"10px"}}> shop Now</Button>
                 </div>
             </div>
             {/* 2nd */}
@@ -19,7 +21,7 @@ const Sale = () => {
                 <div className='absolute flex flex-col space-y-2 w-full h-full justify-center text-white items-center md:items-start md:pl-10 bg-black/40'>
                     <h2 className='font-bold text-xl'>20% sales ongoing on Laptop</h2>
                     <p className='font-bold'>offers on limited time</p>
-                    <Button variant='contained' sx={{backgroundColor:"#5C5352", borderRadius:"10px"}}> shop Now</Button>
+                    <Button onClick={()=>navigate(`/shop`)} variant='contained' sx={{backgroundColor:"#5C5352", borderRadius:"10px"}}> shop Now</Button>
                 </div>
             </div>
             {/* 3nd */}
@@ -28,7 +30,7 @@ const Sale = () => {
                 <div className='absolute flex flex-col space-y-2 w-full h-full justify-center text-white items-center bg-black/40 md:items-start md:pl-10'>
                     <h2 className='font-bold text-xl'>20% sales ongoing on more Product</h2>
                     <p className='font-bold'>offers on limited time</p>
-                    <Button variant='contained' sx={{backgroundColor:"#5C5352", borderRadius:"10px"}}> shop Now</Button>
+                    <Button onClick={()=>navigate(`/shop`)} variant='contained' sx={{backgroundColor:"#5C5352", borderRadius:"10px"}}> shop Now</Button>
                 </div>
             </div>
         </div>

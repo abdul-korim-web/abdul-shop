@@ -3,8 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 const Herocarocel = () => {
   const [dotActive, setDotActive] = useState(0);
+  const navigate = useNavigate()
   const settings = {
     dots: true,
     infinite: true,
@@ -139,6 +141,7 @@ const Herocarocel = () => {
             </p>
             <div>
               <Button
+              onClick={()=>navigate(`/shop`)}
                 variant="contained"
                 sx={{
                   borderRadius: "5px",
