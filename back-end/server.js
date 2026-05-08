@@ -12,7 +12,7 @@ const app = express()
 dotenv.config()
 app.use(express.json())
 app.use(cors({
-    origin:["https://abdul-shop-frontend.vercel.app","https://abdul-shop-admin.vercel.app"],
+    origin:["https://abdul-shop-frontend.vercel.app","https://abdul-shop-admin.vercel.app","http://localhost:5173","http://localhost:5174"],
     credentials:true
 }))
 
@@ -42,5 +42,5 @@ app.use((err,req,res,next)=>{
 const port = process.env.PORT || 3000
 app.listen(port,()=>{
     console.log(`abdul korim shop backend server running `);
-    console.log(`this backend make by Abdul Korim`);
+    console.log(`This backend make by Abdul Korim`);
 })

@@ -24,7 +24,7 @@ const Navbar = () => {
           alt="Logo"
           onClick={() => navigate("/")}
         />
-        <p className="text-gray-600 text-sm md:text-xl">Orebe Admin panel</p>
+        <p className="text-gray-600 text-sm md:text-xl">Abdul Admin panel</p>
       </div>
       <div className=" flex justify-center items-center">
         {admin?(
