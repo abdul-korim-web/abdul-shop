@@ -40,7 +40,9 @@ app.use((err,req,res,next)=>{
 })
 //  listing port 
 const port = process.env.PORT || 3000
-app.listen(port,()=>{
-    console.log(`abdul korim shop backend server running `);
-    console.log(`This backend make by Abdul Korim`);
-})
+// app.listen(port,()=>{
+//     console.log(`abdul korim shop backend server running `);
+//     console.log(`This backend make by Abdul Korim`);
+// })
+
+export default app
